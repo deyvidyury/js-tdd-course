@@ -6,14 +6,23 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch"
   },
   "author": "Deyvid Yury <deyvidyury@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@mocha/eslint-config-mocha": "0.0.0",
+    "chai": "^4.2.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.9"
+    "eslint-plugin-mocha": "^6.2.0",
+    "eslint-plugin-mocha-only": "0.0.3",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^3.0.9",
+    "mocha": "^6.2.1"
   }
 }
