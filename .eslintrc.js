@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     'mocha/no-mocha-arrows': 'off',
+    'no-unused-expressions': 'off',
   },
   plugins: ['mocha'],
 };
